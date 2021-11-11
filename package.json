@@ -39,6 +39,6 @@
   },
   "devDependencies": {
     "prettier": "2.4.1",
-    "semantic-release": "^18.0.0"
+    "semantic-release": "^16.0.0"
   }
 }
