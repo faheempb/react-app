@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env: 
+    env:
       SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
       SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
 
@@ -64,6 +64,5 @@ jobs:
       - name: Upload Coverage Reports
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: npx codecov
-        env: 
+        env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-
